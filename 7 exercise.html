@@ -1,0 +1,35 @@
+<meta charset = "utf-8">
+<script>
+var n = 0;
+do{
+var a = parseInt(prompt("Do u  want to play the game, enter = 1 or exit = 0"));
+if(a == 1){
+    if((Math.random() * 6) < 1){
+    alert("Dead");
+    break;
+    }
+n++;
+}
+else{
+alert("Game over!");
+}
+}
+while(true);
+alert("Number of rounds: " + n)
+
+
+/*
+var n = 0;
+do {
+if ((Math.random() * 6) < 1 ) {
+alert("конец");
+break;
+}
+n++;
+
+} while (prompt("Введите 1 чтобы выйти") != "1" );
+
+alert("выйграно раундов " + n);
+*/
+    
+</script>

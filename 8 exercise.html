@@ -1,0 +1,10 @@
+<meta charset="utf-8">
+<script>
+var sum = parseInt(prompt("Enter sum of deposit: "));
+var per = parseInt(prompt("Enter percent: "));
+var years = parseInt(prompt("Number of years: "));
+for(var i = 1; i <= years; i++){
+    sum = sum * (per / 100) + sum;
+alert("Sum " + Math.floor(sum) + "rub for" + i + " years");
+}
+</script>
